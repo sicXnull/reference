@@ -1,0 +1,65 @@
+extends layout
+
+block content
+  script.
+    $(document).ready(function(){
+      console.log('masternodes table');
+      function secondsToDms(t) {
+        t = Number(t);
+        var d = Math.floor(t / (24 * 3600));
+        var h = Math.floor(t % (24 * 3600) / 3600);
+        var m = Math.floor(t % 3600 / 60);
+        var s = Math.floor(t % 3600 % 60);
+        return ('0' + d).slice(-2) + "d " + ('0' + h).slice(-2) + "h " + ('0' + m).slice(-2) + "m " + ('0' + s).slice(-2) + "s";
+      }
+      function secondsToHms(d) {
+        d = Number(d);
+        var h = Math.floor(d / 3600);
+        var m = Math.floor(d % 3600 / 60);
+        var s = Math.floor(d % 3600 % 60);
+        return ('0' + h).slice(-2) + ":" + ('0' + m).slice(-2) + ":" + ('0' + s).slice(-2);
+      }
+      var ctable = $('#masternodes-table').dataTable( {
+        autoWidth: true,
+        searching: true,
+        ordering: true,
+        responsive: true,
+        lengthChange: true,
+        processing: false,
+        bPaginate: true,
+        pageLength: 10,
+        order: [[ 3, "desc" ]],
+        ajax: {
+          url: '/ext/masternodes',
+          dataSrc: function ( json ) {
+            for ( var i=0;i<json.data.length; i++ ) {
+              json.data[i]['address'] = "<a href='/address/" + json.data[i]['address'] + "'>" + json.data[i]['address'] + "</a>";
+              json.data[i]['lastseen'] = new Date((json.data[i]['lastseen']) * 1000).toLocaleString();
+              json.data[i]['active'] = secondsToDms(json.data[i]['active']);
+              json.data[i]['ip'] = json.data[i]['ip'];
+            }
+            return json.data;
+          }
+        },
+        columns: [
+          { data: 'address' },
+          { data: 'status' },
+          { data: 'lastseen' },
+          { data: 'active' },
+          { data: 'ip' },
+        ]
+      });
+    });
+  .col-md-10(style="margin-bottom: 4%").col-md-offset-1
+    .panel.panel-default
+      .panel-heading
+        strong #{settings.locale.net_connections}
+      table#masternodes-table.table.table-bordered.table-striped
+        thead
+          tr
+            th.text-center #{settings.locale.mn_address}
+            th.text-center #{settings.locale.mn_status}
+            th.text-center #{settings.locale.mn_lastseen}
+            th.text-center #{settings.locale.mn_active}
+            th.text-center #{settings.locale.mn_ip}
+        tbody.text-center

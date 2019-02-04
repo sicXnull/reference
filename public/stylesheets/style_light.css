@@ -1,0 +1,383 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 80px 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #252525 url('/images/sparks_background_white_92.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #444;
+}
+
+.darktheme {
+  display: inline-block!important;
+}
+
+.lighttheme {
+  display: none!important;
+}
+#index-search {
+	width: 100%;
+}
+
+.nav-search input {
+	width: 400px !important;
+	margin-right: 5px;
+}
+
+.view_tx {
+	text-align: center;
+}
+
+.block-last {
+	margin: 0;
+	margin-right: 10px;
+}
+
+.block-next {
+	margin: 0;
+	margin-left: 10px;
+}
+#chart3 .jqplot-xaxis {
+	display: none;
+}
+
+.data {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+.txid {
+	width: 100%;
+	display:block;
+	overflow: hidden;
+}
+
+.panel-address-summary {
+ margin-bottom: 5px;
+}
+
+/* datatable tweaks */
+table {
+	width: 100% !important;
+}
+.dataTables_info, .dataTables_length {
+	padding-left: 10px;
+}
+
+.dataTables_info {
+	display: hidden !important;
+}
+
+.dataTables_length {
+	padding-top: 10px;
+}
+
+#masternodes-table_filter {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.dataTables_paginate {
+	padding-right: 5px;
+}
+
+.tabpanel {
+	margin-top: 5px;
+}
+
+table a:not(.btn),.table a:not(.btn){
+	text-decoration:none
+}
+
+tr {
+	width: 100%;
+}
+
+.footer-padding {
+	height: 50px;
+	width: 100%;
+}
+
+.summary-table {
+	margin: 0px !important;
+}
+
+#loading-icon {
+	width: 30px;
+    margin: 10px 10px;
+}
+
+.menu-text {
+	margin-left:5px;
+}
+
+#twitter-icon,
+#facebook-icon,
+#googleplus-icon,
+#bitcointalk-icon,
+#website-icon,
+#github-icon,
+#dark-icon,
+#light-icon,
+#slack-icon {
+	font-size: 20px;
+}
+
+.connections {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+#twitter-icon img,
+#facebook-icon img,
+#googleplus-icon img,
+#bitcointalk-icon img,
+#website-icon img,
+#github-icon img,
+#slack-icon img{
+	width: 40px;
+	margin: 5px 5px;
+}
+
+#market_menu {
+	margin-bottom: 5px;
+}
+
+#hashratepanel span,
+#difficultypanel span,
+#supplypanel span,
+#masternodepanel span,
+#pricepanel span{
+	margin: 0 5px 0 5px;
+	top: 0;
+}
+
+.label a:link {
+	color: #ffffff;
+}
+
+.label a:visited {
+	color: #ffffff;
+}
+
+.label a:hover {
+	color: #ffffff;
+}
+
+.label a:active {
+	color: #ffffff;
+}
+
+.qrcode {
+	position: absolute;
+	top: 65px;
+	right: 15px;
+}
+
+.footer-logo {
+	height: 40px;
+	position: absolute;
+	bottom: 0px;
+}
+
+/* Argo Edits */
+
+.col-md-6, .col-md-10 {
+  display: table;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #444;
+    background-color: #eee;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #444;
+    background-color: #eee;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #eee;
+}
+
+.navbar-default {
+    background-color: #ff5555;
+    border-color: #eee;
+}
+
+.navbar-switcher {
+  display:inline-block;
+  float: none;
+  margin-bottom: -4px;
+}
+
+.panel {
+  border: none;
+  background: #fff;
+}
+
+.panel-default>.panel-heading {
+  background-color: #f7f7f7;
+  color: #444;
+  border: none;
+}
+
+.panel-default>.panel-argo {
+  background-color: #f7f7f7;
+  color: #444;
+  border: none;
+}
+
+span.glyphicon.glyphicon-info-sign.iquidus.pull-right {
+  color: #444!important;
+}
+
+.btn-argo {
+  width: 20%;
+  vertical-align: middle;
+  height: 43px;
+  border: none;
+}
+
+.navbar-fixed-bottom {
+  background: #f7f7f7!important;
+}
+
+.navbar-fixed-bottom .navbar-nav>li>a {
+    color: #444;
+}
+
+.label-default {
+    background-color: #e6e6e6;
+    color: #444;
+}
+
+.table-argo {
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #fcfcfc!important;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+  border-color: #eee!important;
+}
+
+.table-bordered {
+  border: 1px solid #eee;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: #fcfcfc;
+}
+
+.dataTables_processing {
+    background-color: #f7f7f7bf;
+}
+
+.glyph-argo {
+  color: #656565;
+}
+
+.footer-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #444;
+    background-color: #f7f7f7;
+    border-color: #eee;
+    cursor: not-allowed;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #111;
+    background-color: #fbfbfb;
+    border-color: #eeeeee;
+    cursor: default;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 10px 18px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #2780e3;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    margin-left: -1px;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #165ba8;
+    background-color: #ececec;
+    border-color: #eee;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #444;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #dcdcdc #dcdcdc #dcdcdc;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #ececec;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+@media(max-width:767px){
+	body {
+		padding: 0px;
+		padding-top: 80px;
+	}
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form-control {
+    vertical-align: middle;
+    padding: 5px;
+    width: 100%;
+  }
+  .row {
+    margin: 0;
+  }
+  .btn-argo {
+    vertical-align: middle;
+    width: 100%;
+  }
+  .col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:0px;padding-right:0px}
+}
+
+@media(max-width:1096px){
+	.nav-search input {
+	    width: 300px !important;
+    }
+}
+
+@media(max-width:865px){
+	.nav-search input {
+	    width: 150px !important;
+    }
+}
